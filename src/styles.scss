@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Raleway:wght@300;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f7f5;
+}
+
+.App {
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f7f5;
+  h1 {
+    font-size: 55px;
+    padding-top: 6rem;
+    padding-bottom: 1.2rem;
+    /* ========= RWD 1440px ========= */
+    @media (max-width: 1440px) {
+      font-size: 43px;
+      padding-top: 5rem;
+      padding-bottom: 0.7rem;
+    }
+    /* ========= RWD 1024px ========= */
+    @media (max-width: 1024px) {
+    font-size: 35px;
+    padding-top: 4rem;
+    padding-bottom: 0.4rem;
+    }
+    /* ========= RWD 414px ========= */
+    @media (max-width: 414px) {
+      font-size: 33px;
+      padding-top: 6rem;
+      padding-bottom: 0.55rem;
+    }
+  }
+  .subText {
+    font-size: 1.3rem;
+    color: #a2b5ff;
+    margin-bottom: 1rem;
+    /* ========= RWD 1440px ========= */
+    @media (max-width: 1440px) {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+    }
+    /* ========= RWD 1024px ========= */
+    @media (max-width: 1024px) {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+    /* ========= RWD 414px ========= */
+    @media (max-width: 414px) {
+      width: 80%;
+      font-size: 0.75rem;
+    }
+  }
+  input {
+    padding: 20px;
+    width: 600px;
+    height: 45px;
+    border-radius: 25px;
+    border: 0.8px solid #888;
+    margin-top: 22px;
+    font-size: 1.1rem;
+    /* ========= RWD 1440px ========= */
+    @media (max-width: 1440px) {
+      width: 520px;
+      height: 38px;
+      margin-top: 16px;
+    }
+    /* ========= RWD 1024px ========= */
+    @media (max-width: 1024px) {
+      width: 500px;
+      padding: 15px 20px;
+      font-size: 0.9rem;
+    }
+    /* ========= RWD 414px ========= */
+    @media (max-width: 414px) {
+      width: 80%;
+      height: 35px;
+      padding: 8px 20px;
+      font-size: 0.8rem;
+    }
+    &:focus{
+      outline: 1px solid rgba(225, 225, 225, 0.5);
+      box-shadow: 0 0 16px rgba(162, 181, 255, 0.8);
+    }
+  }
+  .item_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    /* ========= RWD 1440px ========= */
+    @media (max-width: 1440px) {
+      margin-top: 10px;
+    }
+    /* ========= RWD 1024px ========= */
+    @media (max-width: 1024px) {
+      margin-top: 6px;
+    }
+    .itemBox {
+      background-color: #fff;
+      width: 560px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0px 3px 6px rgba(134, 134, 134, 0.5);
+      /* ========= RWD 1440px ========= */
+      @media (max-width: 1440px) {
+        margin-top: 18px;
+        width: 520px;
+      }
+      /* ========= RWD 1024px ========= */
+      @media (max-width: 1024px) {
+        width: 480px;
+        margin-top: 18px;
+      }
+      /* ========= RWD 414px ========= */
+      @media (max-width: 414px) {
+        width: 90%;
+      }
+      .itemName {
+        p{
+          display: inline-block;
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-top: 12px;
+          padding-right: 3px;
+          color: rgb(49, 105, 238);
+          /* ========= RWD 1440px ========= */
+          @media (max-width: 1440px) {
+            font-size: 1.2rem;
+          }
+          /* ========= RWD 1024px ========= */
+          @media (max-width: 1024px) {
+            font-size: 1rem;
+          }
+          /* ========= RWD 414px ========= */
+          @media (max-width: 414px) {
+            font-size: 0.95rem;
+          }
+        }
+        span{
+          color: rgb(49, 49, 49);
+          font-size: 1.2rem;
+          padding-left: 3px;
+          color: rgb(49, 105, 238);
+          /* ========= RWD 1440px ========= */
+          @media (max-width: 1440px) {
+            font-size: 1.05rem;
+          }
+          /* ========= RWD 1024px ========= */
+          @media (max-width: 1024px) {
+            font-size: 0.95rem;
+          }
+        }
+      }
+      .itemKeyword {
+        border: 1px solid #b0b7d4;
+        padding: 2px 0;
+        margin: 15px 22px;
+        border-radius: 15px;
+        color: #8188a7;
+        font-size: 20px;
+        /* ========= RWD 1440px ========= */
+        @media (max-width: 1440px) {
+          margin: 10px 26px;
+        }
+        /* ========= RWD 1024px ========= */
+        @media (max-width: 1024px) {
+          margin: 8px 20px;
+          font-size: 15px;
+        }
+      }
+      .itemContent {
+        background-color: #eef0f8;
+        width: 520px;
+        padding: 18px;
+        border-radius: 6px;
+        margin-top: 12px;
+        margin-bottom: 8px;
+        /* ========= RWD 1440px ========= */
+        @media (max-width: 1440px) {
+          width: 485px;
+        }
+        /* ========= RWD 1024px ========= */
+        @media (max-width: 1024px) {
+          width: 440px;
+          margin-top: 3px;
+          margin-bottom: 10px;
+        }
+        /* ========= RWD 414px ========= */
+        @media (max-width: 414px) {
+          width: 90%;
+        }
+        p {
+          font-size: 1.35rem;
+          color: #222;
+          font-weight: 600;
+          padding-bottom: 0.3rem;
+          /* ========= RWD 1440px ========= */
+          @media (max-width: 1440px) {
+            font-size: 1.15rem;
+          }
+          /* ========= RWD 1024px ========= */
+          @media (max-width: 1024px) {
+            font-size: 1.05rem;
+          }
+          /* ========= RWD 414px ========= */
+          @media (max-width: 414px) {
+            font-size: 1rem;
+          }
+        }
+        span {
+          color: rgb(49, 49, 49);
+          font-size: 0.9rem;
+          /* ========= RWD 1024px ========= */
+          @media (max-width: 1024px) {
+            font-size: 0.8rem;
+          }
+          /* ========= RWD 414px ========= */
+          @media (max-width: 414px) {
+            font-size: 0.75rem;
+          }
+        }
+      }
+      &:hover {
+        box-shadow: 0px 0px 10px rgba(0, 116, 204, 0.5);
+        transition: 0.3s;
+        transform: scale(1.025);
+        /* ========= RWD 414px ========= */
+        @media (max-width: 414px) {
+          transform: scale(1.015);
+        }
+      }
+    }
+  }
+}
+
+
